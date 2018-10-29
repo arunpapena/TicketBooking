@@ -1,0 +1,6 @@
+package com.techouts.ticketbooking.dao;
+
+public interface PassengersDataDAO {
+
+	public Boolean insertPassenger(int userId,String name,int age);
+}
