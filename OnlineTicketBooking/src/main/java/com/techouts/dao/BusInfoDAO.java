@@ -1,4 +1,4 @@
-package com.techouts.dao;
+package com.techouts.ticketbooking.dao;
 
 import java.util.List;
 

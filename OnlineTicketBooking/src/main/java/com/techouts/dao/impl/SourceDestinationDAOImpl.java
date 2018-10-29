@@ -1,4 +1,4 @@
-package com.techouts.dao.impl;
+package com.techouts.ticketbooking.dao.impl;
 
 import java.sql.PreparedStatement;
 import java.sql.SQLException;

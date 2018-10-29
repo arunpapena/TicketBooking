@@ -1,4 +1,4 @@
-package com.techouts.services.impl;
+package com.techouts.ticketbooking.services.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
