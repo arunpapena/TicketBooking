@@ -1,4 +1,4 @@
-package com.techouts.controllers;
+package com.techouts.ticketbooking.controllers;
 
 import java.util.List;
 
