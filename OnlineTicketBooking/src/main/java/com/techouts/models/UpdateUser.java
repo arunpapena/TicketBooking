@@ -1,4 +1,4 @@
-package com.techouts.models;
+package com.techouts.techoutstravel.model;
 
 public class UpdateUser {
 	
