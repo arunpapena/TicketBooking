@@ -1,4 +1,4 @@
-package com.techouts.ticketbooking.validations;
+package com.techouts.validations;
 
 import org.springframework.stereotype.Component;
 import org.springframework.validation.Errors;
