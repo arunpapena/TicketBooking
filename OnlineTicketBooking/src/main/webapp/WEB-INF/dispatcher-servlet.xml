@@ -28,9 +28,26 @@
 		<property name="password" value="techouts" />
 	</bean>
 
-	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate" autowire="byType">
 		<property name="dataSource" ref="ds"></property>
 	</bean>
+	
+	<bean id="temp" class="com.techouts.dao.impl.RegisterDaoImpl">
+ <property name="template" ref="jdbcTemplate"></property>
+ </bean>
+ 
+ <bean id="templ" class="com.techouts.dao.impl.ForgotPasswordImplimentation">
+ <property name="template" ref="jdbcTemplate"></property>
+ </bean>
+ 
+  <bean id="templa" class="com.techouts.dao.impl.SetPasswordDaoImplimentation">
+ <property name="template" ref="jdbcTemplate"></property>
+ </bean>
+ 
+ <bean id="templat" class="com.techouts.techoutstravel.mail.DefaultPasswordInsertImpl">
+ <property name="template" ref="jdbcTemplate"></property>
+ </bean>
+	
 	<mvc:resources mapping = "/images/**" location = "/WEB-INF/images/" />
    <mvc:annotation-driven/>
 </beans>

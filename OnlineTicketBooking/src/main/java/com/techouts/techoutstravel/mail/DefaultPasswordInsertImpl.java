@@ -1,8 +1,7 @@
 package com.techouts.techoutstravel.mail;
 
 import org.springframework.jdbc.core.JdbcTemplate;
-import com.techouts.techoutstravel.dao.DefaultPasswordInsert;
-
+import com.techouts.dao.DefaultPasswordInsert;
 
 public class DefaultPasswordInsertImpl implements DefaultPasswordInsert{
 
