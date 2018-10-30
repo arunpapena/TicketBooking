@@ -1,22 +1,14 @@
-package com.techouts.techoutstravel.model;
 
-import javax.validation.constraints.NotNull;
-
-import org.hibernate.validator.constraints.Email;
-import org.hibernate.validator.constraints.NotEmpty;
+package com.techouts.models;
 
 public class User {
 	
-	@NotEmpty
-	@NotNull
-	private String name;
-	@NotEmpty
-	@NotNull
-	@Email
 	private String email;
-	@NotEmpty
-	@NotNull
+	private String password;
+	private String name;
 	private String contact;
+	private boolean flag;
+
 	
 	public String getName() {
 		return name;
@@ -30,27 +22,38 @@ public class User {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public String getContact() {
-		return contact;
+	public String getPassword() {
+		return password;
 	}
-	public void setContact(String contact) {
-		this.contact = contact;
+	public void setPassword(String password) {
+		this.password = password;
 	}
-	public User() {}
+	public boolean isFlag() {
+		return flag;
+	}
+	public void setFlag(boolean flag) {
+		this.flag = flag;
+	}
+	
+
+	
 	
 	@Override
 	public String toString() {
-		return "User [name=" + name + ", email=" + email + ", contact=" + contact + "]";
-	}
-	public User(String name, String email, String contact) {
+		return "User [email=" + email + ", password=" + password + ", name=" + name + ", contact=" + contact + ", flag="
+				+ flag + "]";
+	
+	
+	public User(String email, String password, String name, String contact, boolean flag) {
 		super();
-		this.name = name;
 		this.email = email;
+		this.password = password;
+		this.name = name;
 		this.contact = contact;
+		this.flag = flag;
 	}
-	public void empty(){
-		name="";
-		email="";
-		contact="";
+	public User() {
+		super();
 	}
+
 }
