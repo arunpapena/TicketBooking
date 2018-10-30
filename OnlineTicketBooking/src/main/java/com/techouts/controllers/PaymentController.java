@@ -11,9 +11,8 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-
-import com.payment.dto.PaymentDTO;
-import com.payment.service.PaymentInsert;
+import com.techouts.models.PaymentDTO;
+import com.techouts.services.PaymentInsert;
 
 @Controller
 @RequestMapping(value="/")

@@ -8,7 +8,9 @@ import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 
-import com.payment.dto.PaymentDTO;
+import com.techouts.models.PaymentDTO;
+
+
 
 public class PaymentInsert {
 	static JdbcTemplate template;
