@@ -1,4 +1,4 @@
-package com.techouts.ticketbooking.dao;
+package com.techouts.dao;
 
 public interface PassengersDataDAO {
 

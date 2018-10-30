@@ -1,4 +1,4 @@
-package com.techouts.ticketbooking.dao.impl;
+package com.techouts.dao.impl;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -10,8 +10,8 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.ResultSetExtractor;
 import org.springframework.stereotype.Repository;
 
-import com.techouts.ticketbooking.dao.BusInfoDAO;
-import com.techouts.ticketbooking.models.BusInfo;
+import com.techouts.dao.BusInfoDAO;
+import com.techouts.models.BusInfo;
 
 @Repository
 public class BusInfoDAOImpl implements BusInfoDAO {
