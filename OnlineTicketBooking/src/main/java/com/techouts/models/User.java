@@ -1,4 +1,3 @@
-
 package com.techouts.models;
 
 public class User {
@@ -8,13 +7,19 @@ public class User {
 	private String name;
 	private String contact;
 	private boolean flag;
-
+	
 	
 	public String getName() {
 		return name;
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+	public String getContact() {
+		return contact;
+	}
+	public void setContact(String contact) {
+		this.contact = contact;
 	}
 	public String getEmail() {
 		return email;
@@ -35,13 +40,16 @@ public class User {
 		this.flag = flag;
 	}
 	
-
+	
+	
+	
 	
 	
 	@Override
 	public String toString() {
 		return "User [email=" + email + ", password=" + password + ", name=" + name + ", contact=" + contact + ", flag="
 				+ flag + "]";
+	}
 	
 	
 	public User(String email, String password, String name, String contact, boolean flag) {
@@ -55,5 +63,7 @@ public class User {
 	public User() {
 		super();
 	}
+	
+	
 
 }
