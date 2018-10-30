@@ -2,7 +2,7 @@ package com.techouts.dao;
 
 import org.springframework.jdbc.core.JdbcTemplate;
 
-import com.techouts.techoutstravel.model.User;
+import com.techouts.models.User;
 
 public interface UserCredentials {
 	
