@@ -1,8 +1,8 @@
-package com.techouts.ticketbooking.services;
+package com.techouts.services;
 
 import java.util.List;
 
-import com.techouts.ticketbooking.models.BusInfo;
+import com.techouts.models.BusInfo;
 
 public interface BusInfoService {
 

@@ -37,7 +37,7 @@ $(document)
 				var pricePerTicket=$("#slctPassenger").attr("name");
 				var noOfTickets=$("#slctPassenger").val();
 				var wallet=$("#idWallet").html();
-				window.location.href = "/ticketbooking/checkingwallet/"+pricePerTicket+"/"+noOfTickets+"/"+wallet+"/"; 
+				window.location.href = "/OnlineTicketBooking/checkingwallet/"+pricePerTicket+"/"+noOfTickets+"/"+wallet+"/"; 
 				
 			});
 			
@@ -77,7 +77,7 @@ $(document)
             		$("#tbPassenger").append(markup);
             		$.ajax({
 						type : "POST",
-						url : "/ticketbooking/inserttopassenger",
+						url : "/OnlineTicketBooking/inserttopassenger",
 						async : "true",
 						data : {
 							"name":name,
@@ -131,7 +131,7 @@ $(document)
     										}
     										$.ajax({
     										type : "POST",    									
-    										url : "/ticketbooking/pricecal",
+    										url : "/OnlineTicketBooking/pricecal",
     										async : "true",
     										data : {
     											"noOfTickets" : noOfTickets,
