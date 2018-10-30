@@ -1,4 +1,4 @@
-package com.techouts.techoutstravel.model;
+package com.techouts.models;
 
 public class User {
 	
