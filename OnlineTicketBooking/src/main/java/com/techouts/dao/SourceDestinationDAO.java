@@ -1,6 +1,6 @@
-package com.techouts.ticketbooking.dao;
+package com.techouts.dao;
 
-import com.techouts.ticketbooking.models.SourceDestination;
+import com.techouts.models.SourceDestination;
 
 public interface SourceDestinationDAO {
 

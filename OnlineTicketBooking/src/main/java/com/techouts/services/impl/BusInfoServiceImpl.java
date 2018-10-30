@@ -1,13 +1,13 @@
-package com.techouts.ticketbooking.services.impl;
+package com.techouts.services.impl;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.techouts.ticketbooking.dao.BusInfoDAO;
-import com.techouts.ticketbooking.models.BusInfo;
-import com.techouts.ticketbooking.services.BusInfoService;
+import com.techouts.dao.BusInfoDAO;
+import com.techouts.models.BusInfo;
+import com.techouts.services.BusInfoService;
 
 @Service
 public class BusInfoServiceImpl implements BusInfoService{
