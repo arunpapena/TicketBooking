@@ -47,6 +47,10 @@
  <bean id="templat" class="com.techouts.techoutstravel.mail.DefaultPasswordInsertImpl">
  <property name="template" ref="jdbcTemplate"></property>
  </bean>
+ 
+ <bean id="payment" class="com.techouts.services.PaymentInsert">  
+<property name="template" ref="jdbcTemplate"></property>  
+</bean>
 	
 	<mvc:resources mapping = "/images/**" location = "/WEB-INF/images/" />
    <mvc:annotation-driven/>
