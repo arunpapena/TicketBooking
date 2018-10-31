@@ -5,8 +5,6 @@ import org.junit.Test;
 import org.mockito.*;
 
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.RowMapper;
-
 import com.techouts.dao.impl.UserCredentialsImpl;
 import com.techouts.models.User;
 

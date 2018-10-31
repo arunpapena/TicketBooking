@@ -12,10 +12,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.techouts.techoutstravel.daoImpl.UserCredentialsImpl;
-import com.techouts.techoutstravel.model.UpdatePassword;
-import com.techouts.techoutstravel.model.UpdateUser;
-import com.techouts.techoutstravel.model.User;
+import com.techouts.dao.impl.UserCredentialsImpl;
+import com.techouts.models.UpdatePassword;
+import com.techouts.models.UpdateUser;
+import com.techouts.models.User;
+
+
 
 @Controller
 @RequestMapping(value = "/")
