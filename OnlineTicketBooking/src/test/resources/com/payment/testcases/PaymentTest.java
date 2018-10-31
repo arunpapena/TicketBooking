@@ -10,10 +10,8 @@ import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 import org.springframework.jdbc.core.JdbcTemplate;
 
-import com.techouts.controllers.PaymentController;
-import com.techouts.models.PaymentDTO;
-
-
+import com.payment.controller.PaymentController;
+import com.payment.dto.PaymentDTO;
 
 public class PaymentTest {
 
