@@ -1,4 +1,4 @@
-package com.techouts.ticketbooking.dao.impl;
+package com.techouts.dao.impl;
 
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
@@ -8,8 +8,8 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.PreparedStatementCallback;
 import org.springframework.stereotype.Repository;
 
-import com.techouts.ticketbooking.dao.SourceDestinationDAO;
-import com.techouts.ticketbooking.models.SourceDestination;
+import com.techouts.dao.SourceDestinationDAO;
+import com.techouts.models.SourceDestination;
 
 @Repository
 public class SourceDestinationDAOImpl implements SourceDestinationDAO {

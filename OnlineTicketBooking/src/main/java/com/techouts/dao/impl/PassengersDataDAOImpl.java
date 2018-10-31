@@ -1,4 +1,4 @@
-package com.techouts.ticketbooking.dao.impl;
+package com.techouts.dao.impl;
 
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
@@ -8,7 +8,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.PreparedStatementCallback;
 import org.springframework.stereotype.Repository;
 
-import com.techouts.ticketbooking.dao.PassengersDataDAO;
+import com.techouts.dao.PassengersDataDAO;
 
 @Repository
 public class PassengersDataDAOImpl implements PassengersDataDAO{

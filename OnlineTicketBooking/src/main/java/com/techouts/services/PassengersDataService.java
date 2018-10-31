@@ -1,4 +1,4 @@
-package com.techouts.ticketbooking.services;
+package com.techouts.services;
 
 public interface PassengersDataService {
 

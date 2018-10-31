@@ -1,4 +1,4 @@
-package com.techouts.ticketbooking.models;
+package com.techouts.models;
 
 
 public class PassengersData {

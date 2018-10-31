@@ -1,10 +1,10 @@
-package com.techouts.ticketbooking.services.impl;
+package com.techouts.services.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.techouts.ticketbooking.dao.PassengersDataDAO;
-import com.techouts.ticketbooking.services.PassengersDataService;
+import com.techouts.dao.PassengersDataDAO;
+import com.techouts.services.PassengersDataService;
 
 @Service
 public class PassengersDataServiceImpl implements PassengersDataService{

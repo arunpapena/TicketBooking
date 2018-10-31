@@ -1,6 +1,6 @@
-package com.techouts.ticketbooking.services;
+package com.techouts.services;
 
-import com.techouts.ticketbooking.models.SourceDestination;
+import com.techouts.models.SourceDestination;
 
 public interface SourceDestinationService {
 

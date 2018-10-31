@@ -1,4 +1,4 @@
-package com.techouts.ticketbooking.controllers;
+package com.techouts.controllers;
 
 import java.util.List;
 
@@ -17,12 +17,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
-import com.techouts.ticketbooking.models.BusInfo;
-import com.techouts.ticketbooking.models.SourceDestination;
-import com.techouts.ticketbooking.services.BusInfoService;
-import com.techouts.ticketbooking.services.PassengersDataService;
-import com.techouts.ticketbooking.services.SourceDestinationService;
-import com.techouts.ticketbooking.validations.BookingValidator;
+import com.techouts.models.BusInfo;
+import com.techouts.models.SourceDestination;
+import com.techouts.services.BusInfoService;
+import com.techouts.services.PassengersDataService;
+import com.techouts.services.SourceDestinationService;
+import com.techouts.validations.BookingValidator;
 
 @Controller
 @RequestMapping(value={"/main","/"})
