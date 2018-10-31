@@ -1,12 +1,12 @@
-package com.techouts.techoutstravel.rowmapper;
+package com.techouts.rowmapper;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import org.springframework.jdbc.core.RowMapper;
 
-import com.techouts.techoutstravel.model.UpdateUser;
-import com.techouts.techoutstravel.model.User;
+import com.techouts.models.UpdateUser;
+import com.techouts.models.User;
 
 public class UserDetailsMapper implements RowMapper {
 
