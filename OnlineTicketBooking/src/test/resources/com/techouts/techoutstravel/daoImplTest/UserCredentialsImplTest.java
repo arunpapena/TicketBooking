@@ -10,9 +10,9 @@ import org.springframework.jdbc.core.RowMapper;
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 
-import com.techouts.techoutstravel.daoImpl.UserCredentialsImpl;
-import com.techouts.techoutstravel.model.User;
-import com.techouts.techoutstravel.rowmapper.SqlUserMapper;
+import com.techouts.dao.impl.UserCredentialsImpl;
+import com.techouts.models.User;
+import com.techouts.rowmapper.SqlUserMapper;
 
 public class UserCredentialsImplTest {
 	
