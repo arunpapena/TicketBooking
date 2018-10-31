@@ -1,0 +1,70 @@
+
+// Surendra DataBase Schema:
+		
+		businfo : create table businfo(BUSNO INT primary key not null,BUSNAME varchar(50),SOURCESTN varchar(50),ARRIVALTIME time,DESTINATIONSTN varchar(50),DEPARTURETIME time,PRICE int);
+		passenger: create table passenger(UserId int,PassengerName varchar(50),passengerAge varchar(50));
+		sourcedestination: create table sourcedestination(UserId int,fromAddress varchar(50),toAddress varchar(50),date varchar(50));
+		
+		
+businfo table data:
++-------+------------------+--------------+-------------+----------------+---------------+-------+
+| BUSNO | BUSNAME          | SOURCESTN    | ARRIVALTIME | DESTINATIONSTN | DEPARTURETIME | PRICE |
++-------+------------------+--------------+-------------+----------------+---------------+-------+
+| 12345 | AtluriTravels    | vijayawada   | 08:00:00    | Secunderabad   | 12:00:00      |  1200 |
+| 12346 | SRSTravels       | Secunderabad | 06:00:00    | Banglore       | 14:00:00      |  1200 |
+| 12347 | OrangeTravels    | Banglore     | 10:00:00    | Mumbai         | 20:00:00      |  2000 |
+| 12348 | VRLTravels       | Mumbai       | 09:00:00    | Delhi          | 19:00:00      |  2000 |
+| 12349 | SharmaTravels    | Delhi        | 14:00:00    | Pune           | 22:00:00      |  1500 |
+| 12350 | GreenlineTravels | Pune         | 12:00:00    | Goa            | 18:00:00      |   600 |
+| 12351 | LimolinerTravels | Goa          | 13:00:00    | Punjab         | 23:00:00      |  2500 |
+| 12352 | KaveriTravels    | Punjab       | 02:00:00    | Kerala         | 23:00:00      |  3000 |
+| 12353 | KGNTravels       | Kerala       | 07:00:00    | Vijayawada     | 13:00:00      |   700 |
+| 12354 | AlhindTravels    | Kolkata      | 01:00:00    | mumbai         | 10:00:00      |  1500 |
+| 12355 | AtluriTravels    | Mumbai       | 08:00:00    | Delhi          | 17:00:00      |  1500 |
++-------+------------------+--------------+-------------+----------------+---------------+-------+
+
+
+// Dinanath Database Schema:
+
+			travel: create table travel(email varchar(50), password varchar(16), flag boolean, name varchar(30), contact varchar(12));
+			
+			
+// Imadullah DataBase Schema
+
+			payment: CREATE TABLE `payment` (                
+           				`id_num` decimal(15,0) NOT NULL,      
+           				`username` varchar(50) DEFAULT NULL,  
+           				`wallet` int(25) DEFAULT NULL,        
+           				`amount` int(25) DEFAULT NULL,        
+          				 PRIMARY KEY (`id_num`)                
+        				 ) ENGINE=InnoDB DEFAULT CHARSET=latin1
+   
+  // Sidddharth Database Schema:
+  
+  			defaultpassword: CREATE TABLE `techoutstravel`.`defaultpassword`
+							 (
+  								`email` VARCHAR(30) NOT NULL,
+ 								 `defaultpswd` VARCHAR(16) NOT NULL,
+  								PRIMARY KEY (`email`, `defaultpswd`));
+  			forgotpassword: CREATE TABLE `techoutstravel`.`forgotpassword` 
+							(
+ 							 `email` VARCHAR(30) NOT NULL,
+ 								 `contact` VARCHAR(11) NOT NULL);					
+  			
+  			setpassword:  CREATE TABLE `techoutstravel`.`setpassword` 
+							(
+ 								 `email` VARCHAR(30) NOT NULL,
+ 								 `contact` VARCHAR(11) NOT NULL,
+
+ 								 `password` VARCHAR(16) NULL,
+ 								 `confirmpassword` VARCHAR(16) NULL,
+ 								 PRIMARY KEY (`email`, `contact`));
+ 								 
+ 								 
+ 			techoutstravel: CREATE TABLE `techoutstravel`.`techoutstravel` (
+ 							 `name` VARCHAR(16) NULL,
+ 							 `email` VARCHAR(30) NOT NULL,
+ 
+							 `contact` VARCHAR(11) NOT NULL,
+  								PRIMARY KEY (`email`, `contact`));
+   			

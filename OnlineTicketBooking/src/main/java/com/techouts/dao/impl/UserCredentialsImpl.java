@@ -2,8 +2,8 @@ package com.techouts.dao.impl;
 
 
 import org.springframework.jdbc.core.JdbcTemplate;
-import com.techouts.techoutstravel.dao.UserCredentials;
-import com.techouts.techoutstravel.model.User;
+import com.techouts.dao.UserCredentials;
+import com.techouts.models.User;
 import com.techouts.techoutstravel.rowmapper.SqlFlagMapper;
 import com.techouts.techoutstravel.rowmapper.SqlPasswordMapper;
 import com.techouts.techoutstravel.rowmapper.SqlUserMapper;
