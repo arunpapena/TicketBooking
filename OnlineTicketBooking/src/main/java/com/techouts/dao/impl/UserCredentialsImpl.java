@@ -4,10 +4,10 @@ package com.techouts.dao.impl;
 import org.springframework.jdbc.core.JdbcTemplate;
 import com.techouts.dao.UserCredentials;
 import com.techouts.models.User;
-import com.techouts.techoutstravel.rowmapper.SqlFlagMapper;
-import com.techouts.techoutstravel.rowmapper.SqlPasswordMapper;
-import com.techouts.techoutstravel.rowmapper.SqlUserMapper;
-import com.techouts.techoutstravel.rowmapper.UserDetailsMapper;
+import com.techouts.rowmapper.SqlFlagMapper;
+import com.techouts.rowmapper.SqlPasswordMapper;
+import com.techouts.rowmapper.SqlUserMapper;
+import com.techouts.rowmapper.UserDetailsMapper;
 
 public class UserCredentialsImpl implements UserCredentials{
 	static JdbcTemplate template;
