@@ -121,6 +121,7 @@ public class BookingController {
 		int oneTicket=Integer.parseInt(pricePerTicket);
 		
 		System.out.println("asdssdff");
+		// chnages made need to be commited 
 		int ticketsCount=Integer.parseInt(noOfTickets);
 		int walletBalance=Integer.parseInt(wallet);
 		if(walletBalance<(oneTicket*ticketsCount))
