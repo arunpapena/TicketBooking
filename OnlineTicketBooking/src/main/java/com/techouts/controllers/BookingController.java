@@ -119,6 +119,8 @@ public class BookingController {
 	public ModelAndView checkingWalletBalance(@PathVariable("pricePerTicket") String pricePerTicket,@PathVariable("noOfTickets") String noOfTickets,@PathVariable("wallet") String wallet){
 		ModelMap model=new ModelMap();
 		int oneTicket=Integer.parseInt(pricePerTicket);
+		
+		System.out.println("asdssdff");
 		int ticketsCount=Integer.parseInt(noOfTickets);
 		int walletBalance=Integer.parseInt(wallet);
 		if(walletBalance<(oneTicket*ticketsCount))
