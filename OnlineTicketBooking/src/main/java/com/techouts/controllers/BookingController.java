@@ -52,6 +52,7 @@ public class BookingController {
 		HttpSession session=request.getSession();  
         session.setAttribute("source",sourceDestination.getFromAddress());
         session.setAttribute("destination",sourceDestination.getToAddress());
+        //added some line
 		if (result.hasErrors()) {
 			return SOURCE;
 		}
@@ -74,6 +75,7 @@ public class BookingController {
         String source = (String) session.getAttribute("source");
         String destination = (String) session.getAttribute("destination");
 		List<BusInfo> list=busInfoService.getAllBusInfo(source,destination);
+		//some other line
 		 session.invalidate();
 		 if(!list.isEmpty())
 		 {
