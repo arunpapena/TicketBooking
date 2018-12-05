@@ -129,8 +129,10 @@ public class BookingController {
 		else
 		{
 			int balanceAmount=(walletBalance-(oneTicket*ticketsCount));
+			System.out.println("some functionality developed");
 			model.addAttribute("balanceAmount", balanceAmount);
 			return new ModelAndView("ticketsbookingsuccess",MODEL,model);
+			
 		}
 	}
 	
