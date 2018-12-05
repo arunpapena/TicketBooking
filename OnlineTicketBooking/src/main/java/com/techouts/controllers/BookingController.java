@@ -53,6 +53,7 @@ public class BookingController {
         session.setAttribute("source",sourceDestination.getFromAddress());
         session.setAttribute("destination",sourceDestination.getToAddress());
         System.out.println("Line changed by Vijay  -- 1");
+        //added some line
 		if (result.hasErrors()) {
 			return SOURCE;
 		}
@@ -76,6 +77,7 @@ public class BookingController {
         String destination = (String) session.getAttribute("destination");
 		List<BusInfo> list=busInfoService.getAllBusInfo(source,destination);
 		 System.out.println("Line changed by Vijay  -- 2");
+	        //added some line
 		 session.invalidate();
 		 if(!list.isEmpty())
 		 {
